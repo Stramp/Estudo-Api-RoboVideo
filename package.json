@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Stramp/Robo#readme",
   "dependencies": {
+    "algorithmia": "^0.3.10",
     "readline-sync": "^1.4.10",
-    "rss-parser": "^3.8.0"
+    "rss-parser": "^3.8.0",
+    "sbd": "^1.0.18"
   }
 }
