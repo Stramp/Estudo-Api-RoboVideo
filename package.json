@@ -18,8 +18,10 @@
   "homepage": "https://github.com/Stramp/Robo#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "ibm-watson": "^5.5.0",
     "readline-sync": "^1.4.10",
     "rss-parser": "^3.8.0",
-    "sbd": "^1.0.18"
+    "sbd": "^1.0.18",
+    "watson-developer-cloud": "^4.0.1"
   }
 }

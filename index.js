@@ -11,6 +11,7 @@ async function start(){
  const content = {}
  content.searchTerm = await askAndReturnSearchTerm()
  content.prefix = askAndReturnPrefix()
+ content.maxSentences = 7
 
  await robots.text(content)
 
@@ -41,7 +42,8 @@ async function start(){
     const selectedPrefix = readline.keyInSelect(prefix,`Choose an option for ${content.searchTerm}:`)
     return prefix[selectedPrefix];
  }
- console.log(content);
+ //console.log(content.sourceContentSanitized)
+ console.log(content.sentences);
 }
 
 start(); 

@@ -1,0 +1,8 @@
+{
+    "apikey": "mmvZbzLE5UmNw8ITekRKW2LAfR5xcIJbgtrEwlzc9tHG",
+    "iam_apikey_description": "Auto-generated for key a9ab367a-efcb-47ba-a47d-380c496baaac",
+    "iam_apikey_name": "Auto-generated service credentials",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/df523a2b66d044b8a83b3ed2c7aadfb5::serviceid:ServiceId-8d80d02b-bf1b-4c02-a40c-5eaa1728b103",
+    "url": "https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/723aea35-38bf-421f-8b8b-c0595965347f"
+  }
