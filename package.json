@@ -18,7 +18,11 @@
   "homepage": "https://github.com/Stramp/Robo#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "gm": "^1.23.1",
+    "googleapis": "^50.0.0",
     "ibm-watson": "^5.5.0",
+    "image-downloader": "^4.0.1",
+    "jimp": "^0.10.3",
     "readline-sync": "^1.4.10",
     "rss-parser": "^3.8.0",
     "sbd": "^1.0.18",

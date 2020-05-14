@@ -3,6 +3,8 @@ const sentenceBoundaryDetection = require('sbd')
 const watsonKey = require('./../watsonKey.json')
 const watsonLang = require('watson-developer-cloud/natural-language-understanding/v1')
 
+const state = require('./stats.js')
+
 const nLu = new watsonLang({
     iam_apikey:watsonKey.apikey,
     version:'2019-02-01',
@@ -10,12 +12,15 @@ const nLu = new watsonLang({
 })
 
 
-async function robot(content){
+async function robot(){
+    const content = state.load();
     await pegarConteudoDoWiki(content);
     sanitizarConteudo(content);
     quebrarConteudoEmSentencas(content);
     limitarSentences(content);
     await fetchKeywordsOfAllSentences(content);
+
+    state.save(content);
     
     async function pegarConteudoDoWiki(content){
         const algorithmiaAutentificacao = algorithmia('simMDJkUo0/CNMxug9+ViwcQdoP1');
@@ -97,7 +102,7 @@ async function robot(content){
                     reject(error)
                     return
                 }
-                //console.log("entrou aqui ? ",response.keywords)
+                console.log("entrou aqui ? ",response.keywords)
                 const keywords = response.keywords.map((keyword) => {
                     return keyword.text
                 })
