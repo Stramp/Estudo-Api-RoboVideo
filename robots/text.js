@@ -102,7 +102,7 @@ async function robot(){
                     reject(error)
                     return
                 }
-                console.log("entrou aqui ? ",response.keywords)
+               // console.log("entrou aqui ? ",response.keywords)
                 const keywords = response.keywords.map((keyword) => {
                     return keyword.text
                 })
