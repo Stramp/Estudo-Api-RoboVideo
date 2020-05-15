@@ -9,9 +9,9 @@
 
 async function start() {
 
-    //await robots.input()
-    //await robots.text()
-    //await robots.image()
+    await robots.input()
+    await robots.text()
+    await robots.image()
     await robots.video()
 
     //console.log(content);

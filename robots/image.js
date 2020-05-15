@@ -92,7 +92,7 @@ async function robot() {
         return new Promise((resolve, reject) => {
             console.log(ind,'[Robot-image]=> Convertendo imagem', img)
             const inputFile = fromRoot(`./img/${ind}-${img}-origi.png`)
-            const outputFile = fromRoot(`./img/converted/${ind}-${img}-converted.png`)
+            const outputFile = fromRoot(`./img/converted/${ind}-img-video.png`)
             const width = 1920
             const height = 1080
 
