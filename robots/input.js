@@ -1,6 +1,6 @@
 const readline = require('readline-sync')
 const Parser = require('rss-parser');
-const TREND_URL = '5' 
+const TREND_URL = 'https://trends.google.com/trends/trendingsearches/daily/rss?geo=BR' 
 
 const state = require('./stats.js')
 
